@@ -1,0 +1,9 @@
+.main {
+    &__gallery {
+
+        object-fit: cover;
+        min-width: 200px;
+        height: 280px;
+        margin: 0.4%;
+    }
+}

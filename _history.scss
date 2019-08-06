@@ -1,0 +1,71 @@
+.horizontal-navigation {
+
+    overflow: auto;
+
+
+    &__container {
+        position: relative;
+        background-color: $pokeBlue;
+        padding: 20px;
+
+        .horizontal-navigation__logo {
+            background-color: $pokeBlue;
+            color: $pokeBlue;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 200ms;
+
+            &:hover {
+                transition: background-color 200ms;
+                background-color: $gray;
+                color: black;
+            }
+
+            img {
+                width: 60px;
+                height: auto;
+                position: relative;
+            }
+        }
+
+        &__menu--isExpandable {
+            display: none;
+
+            a {
+                color: $pokeBlue;
+                padding: 14px 16px;
+                text-decoration: none;
+                display: block;
+            }
+        }
+    }
+
+    .horizontal-navigation__hamburger {
+        background: $pokeYellow;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        padding: 20px;
+
+        i {
+            color: $pokeBlue;
+        }
+    }
+
+    @media only screen and (min-width: 700px) {
+        .horizontal-navigation__hamburger {
+            display: none;
+        }
+
+        .horizontal-navigation__expanded-links {
+            display: none;
+        }
+
+    }
+
+
+
+
+}

@@ -1,0 +1,23 @@
+@import "font";
+@import "functions";
+@import "variables";
+@import "mixin";
+@import "index";
+@import "history";
+@import "types";
+@import "gallery";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, Arial, Geneva, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+p {
+    @include paragraph;
+}

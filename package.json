@@ -1,0 +1,15 @@
+{
+  "name": "pokemon-wikipedia",
+  "version": "0.1.2",
+  "sasslintConfig": ".sass-lint.yml",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erik Rybalkin",
+  "license": "ISC",
+  "devDependencies": {
+    "sass-lint": "^1.13.1"
+  }
+}

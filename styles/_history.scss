@@ -1,0 +1,114 @@
+.horizontal-navigation {
+
+    overflow: auto;
+
+    &__container {
+        position: relative;
+        background-color: $pokeBlue;
+        user-select: none;
+
+        .horizontal-navigation__logo {
+            background-color: $pokeBlue;
+            padding: 200px 10% 0 10%;
+            transition: background-color 200ms;
+            text-decoration: none;
+
+            &:hover {
+                transition: background-color 200ms;
+                background-color: $gray;
+            }
+
+            img {
+                width: 60px;
+                position: relative;
+                margin: 10px 0 10px 0;
+            }
+        }
+
+        .horizontal-navigation__desktop-links {
+            text-decoration: none;
+            color: $pokeYellow;
+            margin: 20px;
+            vertical-align: 0.7em;
+
+            @media only screen and (max-width: 700px) {
+                & {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__menu--isExpandable {
+        display: none;
+
+        a {
+            color: $pokeBlue;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+        }
+    }
+
+    .horizontal-navigation__hamburger {
+        background: $pokeYellow;
+        display: block;
+        position: absolute;
+        padding: 15px;
+        right: 0;
+        top: 0;
+        height: 100%;
+
+        i {
+            color: $pokeBlue;
+        }
+    }
+
+    @media only screen and (min-width: 700px) {
+        .horizontal-navigation__hamburger {
+            display: none;
+        }
+
+        .horizontal-navigation__expanded-links {
+            display: none;
+        }
+    }
+}
+
+.main {
+
+    &__container {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        align-content: center;
+        justify-content: center;
+        margin: 2%;
+    }
+
+    &__image {
+        margin: 2%;
+        max-width: 100%;
+
+        img {
+            max-width: 300px;
+            width: 80%;
+            object-fit: scale-down;
+        }
+    }
+
+    &__text {
+        max-width: 40vw;
+        align-self: center;
+        margin: 2%;
+        @include paragraph;
+        font-size: fluidFont(13px);
+        vertical-align: bottom;
+
+        @media screen and (max-width: 700px) {
+            max-width: 80vw;
+        }
+
+    }
+}
