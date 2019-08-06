@@ -9,7 +9,16 @@
   },
   "author": "Erik Rybalkin",
   "license": "ISC",
+  "browserslist": [
+    "last 10 versions"
+  ],
   "devDependencies": {
-    "sass-lint": "^1.13.1"
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "6.1.0",
+    "gulp-csso": "3.0.1",
+    "gulp-load-plugins": "2.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "4.0.2",
+    "sass-lint": "1.13.1"
   }
 }
